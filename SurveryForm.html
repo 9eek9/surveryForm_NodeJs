@@ -1,0 +1,107 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Survery Form</title>    
+    <style>
+        /* Styling the Body element i.e. Color, Font, Alignment */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+ 
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+ 
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input
+        {
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+ 
+        /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        /* Styling Button */
+        button {
+            font-size: 21px;
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>    
+<body>    
+    <h2>Survery Page</h2><br>    
+    <form id="form1">    
+        <div class="form-control">
+            <label for="name" id="lblName"><b>User Name</b> </label>    
+            <input type="text" id="txtName" placeholder="Enter your name">    
+        </div>
+          
+        <div class="form-control">
+            <label for="email" id="lblEmail"><b>Email Address</b> </label>    
+            <input type="email" id="txtEmail" placeholder="Enter your email">    
+        </div>
+        
+        <div class="form-control">
+            <label for="age" id="lblAge"><b>Age</b> </label>    
+            <input type="text" id="txtAge" placeholder="Enter your age">    
+        </div>
+        
+        <div class="form-control">
+            <label>
+                Would you recommend Web Dev and Tech Class to a friend?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Yes</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">No</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed">Maybe</input>
+            </label>
+        </div>
+        </br></br>
+        
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>     
+</div>    
+</body>    
+</html>   
